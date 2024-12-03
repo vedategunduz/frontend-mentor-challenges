@@ -1,3 +1,6 @@
+# Live preview
+https://vedategunduz.github.io/frontend-mentor-challenges/social-links-profile/
+
 # Front-end Style Guide
 
 ![Design preview for the Social links profile coding challenge](./preview.jpg)
