@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- 🛠️ [Solution on GitHub](https://github.com/vedategunduz/time-tracking-dashboard-main)
+- 🛠️ [Solution on GitHub](https://github.com/vedategunduz/frontend-mentor-challenges/tree/main/time-tracking-dashboard-main)
 - 🌐 [Live Site Demo](https://vedategunduz.github.io/frontend-mentor-challenges/time-tracking-dashboard-main/)
 
 ---
