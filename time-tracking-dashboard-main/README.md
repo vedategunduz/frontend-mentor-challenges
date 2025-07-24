@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- 🛠️ [Solution on GitHub](https://github.com/vedatemregunduz/time-tracking-dashboard)
-- 🌐 [Live Site Demo](https://vedatemregunduz.github.io/time-tracking-dashboard)
+- 🛠️ [Solution on GitHub](https://github.com/vedategunduz/frontend-mentor-challenges/tree/main/time-tracking-dashboard-main)
+- 🌐 [Live Site Demo](https://vedategunduz.github.io/frontend-mentor-challenges/time-tracking-dashboard-main/)
 
 ---
 
