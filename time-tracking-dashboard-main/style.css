@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+html,
+body {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.mbg-navy-950 {
+  background-color: hsl(226, 43%, 10%);
+}
+
+.mbg-navy-900 {
+  background-color: hsl(234, 44%, 20%);
+}
+
+.mbg-purple-500 {
+  background-color: hsl(235, 45%, 61%);
+}
+
+.mbg-navy-200 {
+  background-color: hsl(236, 100%, 87%);
+}
+
+.mbg-purple-600 {
+  background-color: hsl(246, 80%, 60%);
+}
+
+.txt-navy {
+  color: hsl(226, 43%, 10%);
+}
+
+.txt-navy-950 {
+  color: hsl(226, 43%, 10%);
+}
+
+.txt-navy-900 {
+  color: hsl(235, 46%, 20%);
+}
+
+.txt-purple-500 {
+  color: hsl(235, 45%, 69%);
+}
+
+/* (work) */
+.mbg-orange-300 {
+  background-color: hsl(15, 100%, 70%);
+}
+
+/* (play) */
+.mbg-blue-300 {
+  background-color: hsl(195, 74%, 62%);
+}
+
+/* (study) */
+.mbg-pink-400 {
+  background-color: hsl(348, 100%, 68%);
+}
+
+/* (exercise) */
+.mbg-green-400 {
+  background-color: hsl(145, 58%, 55%);
+}
+
+/* (social) */
+.mbg-purple-700 {
+  background-color: hsl(264, 64%, 52%);
+}
+
+/* (self care) */
+.mbg-yellow-300 {
+  background-color: hsl(43, 84%, 65%);
+}
+
+/* (social) */
+.mbg-purple-500 {
+  background-color: hsl(235, 45%, 61%);
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.flip-vertical {
+  transform: scaleY(-1) scaleX(-1);
+}
+
+.hover {
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: hsl(236, 41%, 34%);
+  }
+}
+
+.active {
+  color: hsl(236, 41%, 34%);
+}

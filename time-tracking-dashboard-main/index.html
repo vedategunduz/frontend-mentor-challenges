@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .attribution {
+            padding: 1rem 0;
+            color: white;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body class="mbg-navy-950 min-h-screen flex flex-col justify-center items-center">
+
+    <main class="max-w-screen-lg mx-auto px-4 lg:p-0">
+        <section class="grid lg:grid-cols-4 gap-8">
+            <div class="row-span-2 mbg-navy-900 rounded-lg">
+                <div class="p-8 mbg-purple-600 rounded-lg flex lg:flex-col gap-8">
+                    <img src="./images/image-jeremy.png" class="size-20 border-3 border-white rounded-full" alt="">
+
+                    <div class="lg:mb-12">
+                        <p class="txt-purple-500 text-sm">Report for</p>
+                        <h1 class="text-3xl text-white font-light">Jeremy Robson</h1>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-12 lg:gap-4 p-8 text-white lg:flex-col items-center justify-center lg:items-start lg:justify-start">
+                    <a href="javascript:void(0)" data-time="daily">Daily</a>
+                    <a href="javascript:void(0)" data-time="weekly">Weekly</a>
+                    <a href="javascript:void(0)" data-time="monthly" class="active">Monthly</a>
+                </div>
+            </div>
+
+            <!-- WORK -->
+            <div class="rounded-lg flex flex-col relative overflow-hidden" data-card>
+                <div class="!h-20 relative mbg-orange-300">
+                    <img src="images/icon-work.svg" class="size-16 flip-horizontal rotate-90 absolute -top-2 right-4"
+                        alt="">
+                </div>
+
+                <div class="mbg-navy-900 px-8 py-4 text-white rounded-lg h-full relative z-10 hover -mt-4">
+                    <div class="mb-8 flex justify-between items-center">
+                        <p data-card-header></p>
+                        <button class="cursor-pointer">
+                            <img src="images/icon-ellipsis.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="text-5xl font-light mb-2">
+                        <span data-current-time></span>hrs
+                    </p>
+                    <p class="text-xs font-light">Last Week - <span data-previous-time></span>hrs</p>
+                </div>
+            </div>
+
+            <!-- PLAY -->
+            <div class="rounded-lg flex flex-col relative overflow-hidden" data-card>
+                <div class="!h-20 relative mbg-blue-300">
+                    <img src="images/icon-play.svg" class="size-16 flip-horizontal rotate-90 absolute -top-2 right-4"
+                        alt="">
+                </div>
+
+                <div class="mbg-navy-900 px-8 py-4 text-white rounded-lg h-full -mt-4 hover relative z-10">
+                    <div class="mb-8 flex justify-between items-center">
+                        <p data-card-header></p>
+                        <button class="cursor-pointer">
+                            <img src="images/icon-ellipsis.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="text-5xl font-light mb-2">
+                        <span data-current-time></span>hrs
+                    </p>
+                    <p class="text-xs font-light">Last Week - <span data-previous-time></span>hrs</p>
+                </div>
+            </div>
+
+            <!-- STUDY -->
+            <div class=" rounded-lg flex flex-col relative overflow-hidden" data-card>
+                <div class="!h-20 relative mbg-pink-400">
+                    <img src="images/icon-study.svg" class="size-16 flip-horizontal rotate-90 absolute -top-2 right-4"
+                        alt="">
+                </div>
+
+                <div class="mbg-navy-900 px-8 py-4 text-white rounded-lg h-full -mt-4 hover relative z-10">
+                    <div class="mb-8 flex justify-between items-center">
+                        <p data-card-header></p>
+                        <button class="cursor-pointer">
+                            <img src="images/icon-ellipsis.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="text-5xl font-light mb-2">
+                        <span data-current-time></span>hrs
+                    </p>
+                    <p class="text-xs font-light">Last Week - <span data-previous-time></span>hrs</p>
+                </div>
+            </div>
+
+            <!-- EXERCISE -->
+            <div class=" rounded-lg flex flex-col relative overflow-hidden" data-card>
+                <div class="!h-20 relative mbg-green-400">
+                    <img src="images/icon-exercise.svg" class="size-16 absolute -top-2 right-4" alt="">
+                </div>
+
+                <div class="mbg-navy-900 px-8 py-4 text-white rounded-lg h-full -mt-4 hover relative z-10">
+                    <div class="mb-8 flex justify-between items-center">
+                        <p data-card-header></p>
+                        <button class="cursor-pointer">
+                            <img src="images/icon-ellipsis.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="text-5xl font-light mb-2">
+                        <span data-current-time></span>hrs
+                    </p>
+                    <p class="text-xs font-light">Last Week - <span data-previous-time></span>hrs</p>
+                </div>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="rounded-lg flex flex-col relative overflow-hidden" data-card>
+                <div class="!h-20 relative mbg-purple-700">
+                    <img src="images/icon-social.svg" class="size-16 flip-horizontal rotate-90 absolute -top-2 right-4"
+                        alt="">
+                </div>
+
+                <div class="mbg-navy-900 px-8 py-4 text-white rounded-lg h-full -mt-4 hover relative z-10">
+                    <div class="mb-8 flex justify-between items-center">
+                        <p data-card-header></p>
+                        <button class="cursor-pointer">
+                            <img src="images/icon-ellipsis.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="text-5xl font-light mb-2">
+                        <span data-current-time></span>hrs
+                    </p>
+                    <p class="text-xs font-light">Last Week - <span data-previous-time></span>hrs</p>
+                </div>
+            </div>
+
+            <!-- SELF CARE -->
+            <div class="rounded-lg flex flex-col relative overflow-hidden" data-card>
+                <div class="!h-20 relative mbg-yellow-300">
+                    <img src="images/icon-self-care.svg"
+                        class="size-16 flip-horizontal rotate-90 absolute -top-2 right-4" alt="">
+                </div>
+
+                <div class="mbg-navy-900 px-8 py-4 text-white rounded-lg h-full -mt-4 hover relative z-10">
+                    <div class="mb-8 flex justify-between items-center">
+                        <p data-card-header></p>
+                        <button class="cursor-pointer">
+                            <img src="images/icon-ellipsis.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="text-5xl font-light mb-2">
+                        <span data-current-time></span>hrs
+                    </p>
+                    <p class="text-xs font-light">Last Week - <span data-previous-time></span>hrs</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">vedategunduz</a>.
+        </footer>
+    </main>
+
+    <script>
+        const links = document.querySelectorAll('a');
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                const time = link.getAttribute('data-time');
+                links.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                getData(time);
+            });
+        });
+
+        const cards = document.querySelectorAll('[data-card]');
+
+        function setCardData(c, data) {
+            c.querySelector('[data-card-header]').textContent = data.title;
+            c.querySelector('[data-current-time]').textContent = data.current;
+            c.querySelector('[data-previous-time]').textContent = data.previous;
+        }
+
+        function getData(time) {
+            fetch('data.json')
+                .then(res => res.json())
+                .then(data => {
+                    cards.forEach((c, i) => {
+                        const item = data[i];
+                        setCardData(c, {
+                            title: item.title,
+                            current: item.timeframes[time].current,
+                            previous: item.timeframes[time].previous
+                        });
+                    });
+                })
+                .catch(err => console.error("Veri çekme hatası:", err));
+        }
+
+        getData("monthly");
+    </script>
+
+</body>
+
+</html>
